@@ -10,10 +10,22 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Spacer()
+            Button{
+                //カメラ使えるか、使えんかの判定
+                if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                    print("カメラ使える")
+                } else {
+                    print("カメラ使えない")
+                }
+            } label: {
+                Text("カメラを起動する")
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 50)
+                    .multilineTextAlignment(.center)
+                    .background(.blue)
+                    .foregroundColor(.white)
+            }
         }
         .padding()
     }

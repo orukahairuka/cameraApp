@@ -11,6 +11,7 @@
 		3B97C7682BB45A3800E39F5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97C7672BB45A3800E39F5B /* ContentView.swift */; };
 		3B97C76A2BB45A3900E39F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B97C7692BB45A3900E39F5B /* Assets.xcassets */; };
 		3B97C76D2BB45A3900E39F5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B97C76C2BB45A3900E39F5B /* Preview Assets.xcassets */; };
+		3B97C7742BB45BB800E39F5B /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97C7732BB45BB800E39F5B /* ImagePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3B97C7672BB45A3800E39F5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B97C7692BB45A3900E39F5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B97C76C2BB45A3900E39F5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B97C7732BB45BB800E39F5B /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				3B97C7652BB45A3800E39F5B /* camera12345App.swift */,
 				3B97C7672BB45A3800E39F5B /* ContentView.swift */,
+				3B97C7732BB45BB800E39F5B /* ImagePickerView.swift */,
 				3B97C7692BB45A3900E39F5B /* Assets.xcassets */,
 				3B97C76B2BB45A3900E39F5B /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B97C7682BB45A3800E39F5B /* ContentView.swift in Sources */,
+				3B97C7742BB45BB800E39F5B /* ImagePickerView.swift in Sources */,
 				3B97C7662BB45A3800E39F5B /* camera12345App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +279,7 @@
 				DEVELOPMENT_TEAM = 922N7TF68N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "写真を撮影するためのカメラを使います";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +309,7 @@
 				DEVELOPMENT_TEAM = 922N7TF68N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "写真を撮影するためのカメラを使います";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
