@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B02311C2BB93CAC00F6A6A9 /* EffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B02311B2BB93CAC00F6A6A9 /* EffectView.swift */; };
 		3B97C7662BB45A3800E39F5B /* camera12345App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97C7652BB45A3800E39F5B /* camera12345App.swift */; };
 		3B97C7682BB45A3800E39F5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97C7672BB45A3800E39F5B /* ContentView.swift */; };
 		3B97C76A2BB45A3900E39F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B97C7692BB45A3900E39F5B /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B02311B2BB93CAC00F6A6A9 /* EffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectView.swift; sourceTree = "<group>"; };
 		3B97C7622BB45A3800E39F5B /* camera12345.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camera12345.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B97C7652BB45A3800E39F5B /* camera12345App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = camera12345App.swift; sourceTree = "<group>"; };
 		3B97C7672BB45A3800E39F5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				3B97C7652BB45A3800E39F5B /* camera12345App.swift */,
+				3B02311B2BB93CAC00F6A6A9 /* EffectView.swift */,
 				3B97C7672BB45A3800E39F5B /* ContentView.swift */,
 				3B97C7732BB45BB800E39F5B /* ImagePickerView.swift */,
 				3B97C7692BB45A3900E39F5B /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 				3B97C7682BB45A3800E39F5B /* ContentView.swift in Sources */,
 				3B97C7742BB45BB800E39F5B /* ImagePickerView.swift in Sources */,
 				3B97C7662BB45A3800E39F5B /* camera12345App.swift in Sources */,
+				3B02311C2BB93CAC00F6A6A9 /* EffectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
