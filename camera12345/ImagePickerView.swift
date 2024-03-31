@@ -27,6 +27,7 @@ struct ImagePickerView: UIViewControllerRepresentable {
             //撮影した写真をcaptureImageに保存
             if let originalImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
                 parent.captureImage = originalImage
+                //ここでfirebaseに写真送れんかな？
             }
             parent.isShowSheet.toggle()
         }
