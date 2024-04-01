@@ -74,7 +74,7 @@ struct EffectView: View {
                 }
             }
             Button {
-
+                isShowSheet.toggle()
             } label: {
                 Text("閉じる")
                     .frame(maxWidth: .infinity)
@@ -85,6 +85,8 @@ struct EffectView: View {
             }
             .padding()
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.white)
         .onAppear {
             //加工前の撮影した写真を加工後の写真に写す
             showImage = captureImage

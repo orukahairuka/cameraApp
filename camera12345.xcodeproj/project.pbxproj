@@ -13,6 +13,7 @@
 		3B97C76A2BB45A3900E39F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B97C7692BB45A3900E39F5B /* Assets.xcassets */; };
 		3B97C76D2BB45A3900E39F5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B97C76C2BB45A3900E39F5B /* Preview Assets.xcassets */; };
 		3B97C7742BB45BB800E39F5B /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97C7732BB45BB800E39F5B /* ImagePickerView.swift */; };
+		3BC144182BBA8E420087D867 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC144172BBA8E420087D867 /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		3B97C7692BB45A3900E39F5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B97C76C2BB45A3900E39F5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B97C7732BB45BB800E39F5B /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		3BC144172BBA8E420087D867 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				3B97C7652BB45A3800E39F5B /* camera12345App.swift */,
 				3B02311B2BB93CAC00F6A6A9 /* EffectView.swift */,
 				3B97C7672BB45A3800E39F5B /* ContentView.swift */,
+				3BC144172BBA8E420087D867 /* UIImageExtension.swift */,
 				3B97C7732BB45BB800E39F5B /* ImagePickerView.swift */,
 				3B97C7692BB45A3900E39F5B /* Assets.xcassets */,
 				3B97C76B2BB45A3900E39F5B /* Preview Content */,
@@ -146,6 +149,7 @@
 				3B97C7682BB45A3800E39F5B /* ContentView.swift in Sources */,
 				3B97C7742BB45BB800E39F5B /* ImagePickerView.swift in Sources */,
 				3B97C7662BB45A3800E39F5B /* camera12345App.swift in Sources */,
+				3BC144182BBA8E420087D867 /* UIImageExtension.swift in Sources */,
 				3B02311C2BB93CAC00F6A6A9 /* EffectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

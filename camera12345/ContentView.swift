@@ -16,18 +16,13 @@ struct ContentView: View {
     @State var photoPickerSelectedImage: PhotosPickerItem? = nil
     var body: some View {
         VStack {
-            Spacer()
-            if let captureImage {
-                //撮影写真表示
-                Image(uiImage: captureImage)
-                    .resizable()
-                    .scaledToFit()
-            }
+
             Spacer()
             Button{
                 //カメラ使えるか、使えんかの判定
                 if UIImagePickerController.isSourceTypeAvailable(.camera) {
                     print("カメラ使える")
+                    captureImage = nil
                     isShowSheet.toggle()
                 } else {
                     print("カメラ使えない")
@@ -42,7 +37,12 @@ struct ContentView: View {
             }
             .padding()
             .sheet(isPresented: $isShowSheet) {
-                ImagePickerView(isShowSheet: $isShowSheet, captureImage: $captureImage)
+                if let captureImage {
+                    EffectView(isShowSheet: $isShowSheet, captureImage: captureImage)
+                } else {
+                    //UIImagePickerController(写真撮影)を表示
+                    ImagePickerView(isShowSheet: $isShowSheet, captureImage: $captureImage)
+                }
             }
             //フォトライブラリーから選択する
             PhotosPicker(selection: $photoPickerSelectedImage, matching: .images, preferredItemEncoding: .automatic, photoLibrary: .shared()) {
@@ -59,6 +59,7 @@ struct ContentView: View {
                     switch result {
                     case.success(let data):
                         if let data{
+                            captureImage = nil
                             captureImage = UIImage(data: data)
                         }
                     case .failure(_):
@@ -66,13 +67,11 @@ struct ContentView: View {
                     }
 
                 }
-                // 画像のDataから一時ファイルを作成し、そのURLをShareLinkに渡す
-                if let captureImage = captureImage, let imageData = captureImage.jpegData(compressionQuality: 1.0) {
-                    if let imageURL = saveImageDataToTemporaryFile(imageData: imageData) {
-                        ShareLink(item: imageURL) {
-                            Text("SNSに投稿する")
-                        }
-                    }
+
+            }
+            .onChange(of: captureImage) { image in
+                if let _ = image {
+                    isShowSheet.toggle()
                 }
             }
         }
