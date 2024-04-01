@@ -11,6 +11,18 @@ struct EffectView: View {
     @Binding var isShowSheet: Bool
     let captureImage: UIImage?
     @State var showImage: UIImage?
+    let filterArray = [
+        "CIPhotoEffectMono",
+        "CIPhotoEffectChrome",
+        "CIPhotoEffectFade",
+        "CIPhotoEffectInstant",
+        "CIPhotoEffectNoir",
+        "CIPhotoEffectProcess",
+        "CIPhotoEffectTonal",
+        "CIPhotoEffectTransfer",
+        "CISepiaTone"
+    ]
+    @State var filterSelectNumber = 0
 
     var body: some View {
         VStack {
@@ -22,7 +34,12 @@ struct EffectView: View {
             }
             Spacer()
             Button {
-                let filterName = "CIPhotoEffectMono"
+                let filterName = filterArray[filterSelectNumber]
+
+                filterSelectNumber += 1
+                if filterSelectNumber == filterArray.count {
+                    filterSelectNumber = 0
+                }
                 //元々の画像の回転角度を取得
                 let rotate = captureImage?.imageOrientation
                 //UIImage形式の画像をCIImage形式に変換
